@@ -71,3 +71,21 @@ ESP32 → Wi-Fi → ThingSpeak Cloud → Remote Monitoring
 - Historical noise analysis
 - GPS-based noise monitoring
 - Multiple sensor integration
+
+---
+
+## Hardware Prototype
+
+The image below shows the physical prototype of the Smart Noise Monitor System developed using Arduino UNO and electronic components.
+
+![Smart Noise Monitor Prototype](Images/original_prototype.jpg.jpeg)
+
+## Working Principle
+
+1. The sound sensor detects environmental noise.
+2. The sensor sends an analog signal to the Arduino UNO.
+3. The Arduino processes the signal and compares it with the adjustable threshold.
+4. When excessive noise is detected, the red LED provides a visual warning.
+5. If the noise continues beyond the warning period, the buzzer is activated.
+6. The 16x2 LCD displays the current monitoring status.
+
