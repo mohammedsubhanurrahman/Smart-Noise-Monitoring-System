@@ -1,31 +1,73 @@
-# Smart-Noise-Monitoring-System
+# Smart Noise Monitor System
 
-**A custom-built noise detection and alert system designed for real-time monitoring and automated warnings.**
+An IoT-based Smart Noise Monitoring System designed to detect excessive noise levels, provide real-time alerts, and support remote noise monitoring.
 
-#### 🚀 Project Overview
-The Smart Noise Monitor is an embedded system project developed to detect ambient sound levels and trigger a visual/audible alert based on customizable logic. This project utilizes an Arduino Uno and analog sound sensors to provide an efficient, low-latency monitoring solution.
+## Project Overview
 
-#### 🛠 Tech Stack
-* **Hardware:** Arduino Uno, Analog Sound Sensor, LED, Buzzer.
-* **Software:** Arduino IDE, C++.
-* **Logic:** Custom alert thresholding and state management.
+The Smart Noise Monitor System is designed to monitor environmental noise using a sound sensor and a microcontroller.
 
-#### 💡 Key Features
-* **Real-time Detection:** Continuously monitors ambient noise levels via analog input.
-* **Custom Alert Logic:** Implements a specific 3-second blinking warning system when noise thresholds are exceeded.
-* **Robust Alerting:** Immediate feedback mechanism to notify users of high-noise environments.
+When noise exceeds a predefined threshold, the system provides visual and audio alerts using LEDs and a buzzer. An LCD displays the monitoring status.
 
-#### ⚙️ System Architecture
-![Smart Noise Monitor Setup](WhatsApp_Image_2026-07-19_at_3.45.52_PM.jpeg)
+The upgraded version introduces ESP32 Wi-Fi connectivity and ThingSpeak cloud integration for remote monitoring.
 
-#### 📝 How to Run
-1. Connect your Arduino Uno to your PC.
-2. Open the code in the Arduino IDE.
-3. Select the correct Board and Port from the Tools menu.
-4. Upload the code to your Arduino.
-5. Observe the LED/Buzzer behavior when noise levels exceed your set threshold.
+## Features
 
-#### 📈 Future Scope
-* **Cloud Integration:** Log noise data to a database for long-term pattern analysis.
-* **Wireless Alerts:** Integrate an ESP8266 or Bluetooth module to send notifications to a mobile app.
-* **Data Visualization:** Build a dashboard to visualize noise fluctuations over time.
+- Real-time sound signal monitoring
+- Adjustable noise threshold using a potentiometer
+- Three-second warning mechanism
+- Red LED indication for excessive noise
+- Green LED indication for normal conditions
+- Buzzer-based alert system
+- 16x2 LCD status display
+- ESP32 Wi-Fi connectivity
+- ThingSpeak cloud data monitoring
+
+## Technologies Used
+
+- Arduino UNO
+- ESP32
+- Embedded C/C++
+- Arduino IDE
+- Sound Sensor
+- 16x2 LCD
+- LEDs and Buzzer
+- ThingSpeak IoT Cloud
+- Wi-Fi Communication
+
+## System Architecture
+
+Sound Sensor → ESP32 → Noise Analysis → Alert System → LCD Display
+
+ESP32 → Wi-Fi → ThingSpeak Cloud → Remote Monitoring
+
+## Project Versions
+
+### Version 1: Arduino UNO
+- Sound detection
+- Adjustable threshold
+- LCD display
+- LED and buzzer alerts
+
+### Version 2: ESP32 IoT Upgrade
+- Wi-Fi connectivity
+- Cloud data transmission
+- Remote monitoring
+- Improved noise analysis
+
+## Applications
+
+- Smart cities
+- Educational institutions
+- Hospitals
+- Industrial environments
+- Residential areas
+- Public noise monitoring
+
+## Future Enhancements
+
+- Calibrated decibel measurement
+- Mobile application integration
+- Real-time push notifications
+- Historical noise analysis
+- GPS-based noise monitoring
+- Multiple sensor integration
